@@ -1,0 +1,19 @@
+.dark-mode:root {
+  --primary-color-bg: #333;
+  --primary-color: #f1ede6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-color);
+  background-color: var(--primary-color-bg);
+}
