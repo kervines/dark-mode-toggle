@@ -21,12 +21,12 @@ body {
 }
 
 .container {
-  /* border: 2px solid; */
   width: 394px;
   height: 190px;
   background-color: #777165;
   border-radius: 100px;
   position: relative;
+  overflow: hidden;
 }
 
 .circule {
@@ -37,27 +37,20 @@ body {
   position: relative;
   top: 5px;
   left: 5px;
-  /* overflow: hidden; */
-  /* deslocamento do circulo */
-  transform: translateX(0px);
-  /* transform: translateX(204px); */
 }
-/* .circule-1 {
-  width: 180px;
-  height: 180px;
-  background-color: #fff;
-  border-radius: 50%;
-  position: absolute;
-  background-color: rgb(253, 160, 160);
-  left: 210px;
-  top: 5px;
-} */
+.goMove {
+  animation: go-move 0.5s ease forwards;
+}
+.backMove {
+  animation: back-move 0.5s ease forwards;
+}
 
 i {
   position: absolute;
   top: 50%;
   font-size: 64px;
   z-index: 100;
+  pointer-events: none;
 }
 .sun {
   left: 95px;
@@ -66,26 +59,11 @@ i {
 .moveSun {
   animation: move-sun 0.5s ease forwards;
 }
-@keyframes move-sun {
-  0% {
-    transform: translate(-50%, -50%);
-  }
-  100% {
-    transform: translate(-50%, 100px);
-  }
-}
+
 .moon {
   left: 299px;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 100px);
 }
 .moveMoon {
   animation: move-moon 0.5s ease forwards;
-}
-@keyframes move-moon {
-  0% {
-    transform: translate(-50%, 100px);
-  }
-  100% {
-    transform: translate(-50%, -50%);
-  }
 }
