@@ -1,0 +1,38 @@
+@keyframes move-moon {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, 100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes move-sun {
+  0% {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, 100px);
+  }
+}
+
+@keyframes go-move {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(204px);
+  }
+}
+@keyframes back-move {
+  0% {
+    transform: translateX(204px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
