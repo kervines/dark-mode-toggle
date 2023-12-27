@@ -1,4 +1,4 @@
-const circule = document.querySelector('.circule');
+const circle = document.querySelector('.circle');
 const sun = document.querySelector('.sun');
 const moon = document.querySelector('.moon');
 const html = document.querySelector('html');
@@ -8,7 +8,7 @@ container.addEventListener('click', activeClass);
 function activeClass() {
   moon.classList.toggle('active');
   sun.classList.toggle('active');
-  circule.classList.toggle('active');
+  circle.classList.toggle('active');
   const mem = html.classList.toggle('dark-mode');
   localStorage.setItem('mode', mem);
 }
